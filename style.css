@@ -1,0 +1,92 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2NlYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    font-family: 'Merriweather Sans', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+} 
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: #000000;
+    color:white;
+    width:100%;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin: 1em;
+    opacity: 0.7;
+    
+}
+.bg-img{
+    border-radius: 10px;
+    width:50%;
+    height:auto;
+    background-size: cover;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    height: 46px;
+    width: 46px;
+}
+button:hover{
+    background: #7c7c7c6b;
+}
+
+input.search-bar{
+    border:none;
+    outline:none;
+    padding:0.5em 1em ;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family:inherit;
+    font-size: 120%;
+    width:calc(100%-90px);
+}
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.2em;
+}
+.flex{
+    display:flex;
+    align-items:center;
+
+}
+.description{
+    text-transform: capitalize;
+    margin-left:10px;
+}
+
+.weather.loading{
+    visibility: hidden;
+    max-height: 15px;
+    position: relative;
+}
+
+.weather.loading:after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position:absolute;
+    top:0;
+    left :20px;
+}
